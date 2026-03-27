@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class VFXPoolItem : MonoBehaviour
+{
+    [SerializeField] private ParticleSystem _particleSystem;
+    public ParticleSystem ParticleSystem => _particleSystem;
+    public VFXPool Pool { get; set; }
+
+    public void ReturnToPool()
+    {
+        Pool.ReturnToPool(this);
+        gameObject.SetActive(false);
+    }
+
+    public void OnGetFromPool()
+    {
+        gameObject.SetActive(true);
+    }
+
+    private void OnParticleSystemStopped()
+    {
+        ReturnToPool();
+    }
+}
