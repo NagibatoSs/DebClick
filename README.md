@@ -1,48 +1,48 @@
 # Deb Click
 
-Жанры: Idle, Clicker
+Genres: Idle, Clicker
 
-**Скачать:** [DebClick](https://disk.yandex.ru/d/hxfwcIfpmEDHNA)
+**Download:** [DebClick](https://disk.yandex.ru/d/hxfwcIfpmEDHNA)
 
 <p align="center">
   <img src="./Screenshots/gameplayVideo.gif" width="200"/>
 </p>
 
-## Описание:
-2D-кликер в пиксельном стиле, разработанный в развлекательных целях.
-Игрок зарабатывает ресурсы с помощью кликов и может приобретать улучшения, стоимость которых увеличивается по мере прогресса.
-Также доступна покупка различных развлекательных элементов Extras(например, смена музыки, купить выборы, купить анекдот и др.), не влияющих напрямую на основной прогресс.
-В процессе игры появляются случайные события — персонажи, при взаимодействии с которыми возникают эффекты, связанные с доходом.
+## Description:
+A 2D pixel-art clicker made for fun.
+The player earns resources by clicking and can buy upgrades whose cost grows as the game progresses.
+The player can also buy various fun Extras (for example, changing the music, buying elections, buying a joke and more), which don't directly affect the main progress.
+Random events happen during the game: characters appear, and interacting with them triggers various effects.
 <p align="center">
   <img src="./Screenshots/screen1.jpg" width="210"/>
   <img src="./Screenshots/screen2.jpg" width="210"/>
   <img src="./Screenshots/screen4.jpg" width="210"/>
 </p>
 
-## Ключевые особенности:
-- Базовая кликер-механика (активный и пассивный доходы)
-- Система улучшений с прогрессирующей стоимостью
-- Система случайных событий с различными эффектами на доход
-- Drag & drop взаимодействие с персонажами случайных событий
+## Key features:
+- Basic clicker mechanic (active and passive income)
+- Upgrade system with progressive pricing
+- Random event system with various effects
+- Drag & drop interaction with random event characters
 
 
-## Использованные технологии и подходы:
-- Component-based архитектура (логика в компонентах)
-- Event-driven взаимодействие между игровыми системами
-- ScriptableObjects для хранения данных (улучшения, extras, случайные события, прогресс игрока)
-- Object Pooling для VFX эффектов кликов
-- Сохранение и загрузка данных (сериализация в JSON и запись в файловую систему)
-- Адаптивный UI (поддержка разных экранов вертикальной ориентации)
-- Механика пассивного дохода через корутины
-- Система случайных событий (с использованием корутин и случайного выбора)
-- Использование VFX, Particle System и Animator
-- Работа с музыкой(изменение музыки, вкл/выкл)
-- Настройка визуального оформления проекта
+## Technologies and approaches:
+- Component-based architecture (logic in components)
+- Event-driven communication between game systems
+- ScriptableObjects for data storage (upgrades, extras, random events, player progress)
+- Object Pooling for click VFX
+- Saving and loading data (JSON serialization and writing to the file system)
+- Adaptive UI (support for different portrait screens)
+- Passive income mechanic using coroutines
+- Random event system (using coroutines and random selection)
+- VFX, Particle System and Animator
+- Music (changing tracks, on/off)
+- Visual design of the project
 
-## Возможные улучшения реализации:
-- Изменить механику свайпа (сейчас привязана к абсолютным координатам)
-- Разделить логику тайминга появления случайных событий, выбора типа события и спавна объектов
-- Добавить всплывающие окна для отображения эффектов от случайных событий
-- Реализовать генерацию объектов случайных событий через Pool
-- Адаптировать для горизонтальной ориентации
-- Реализовать загрузку/сохранение настроек режима музыки (вкл/выкл)
+## Possible improvements:
+- Change the swipe mechanic (currently tied to absolute coordinates)
+- Separate the logic of random event timing, event type selection and object spawning
+- Add pop-up windows to show the effects of random events
+- Spawn random event objects through a Pool
+- Adapt for landscape orientation
+- Add saving/loading of the music setting (on/off)
