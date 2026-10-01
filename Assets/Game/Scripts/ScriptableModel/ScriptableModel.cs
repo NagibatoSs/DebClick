@@ -17,11 +17,16 @@ public class ScriptableModel<TModel> : ScriptableObject, IStorable where TModel:
 
     public bool Load()
     {
+    #if UNITY_WEBGL && !UNITY_EDITOR                                   
+        if (!PlayerPrefs.HasKey(name + "data123"))                     
+            return false;                                              
+        string modelText = PlayerPrefs.GetString(name + "data123");  
+    #else                                                               
         if (!File.Exists(GetStoragePath(name)))
             return false;
-        TModel model = new TModel();
-        File.ReadAllText(GetStoragePath(name));
         string modelText = File.ReadAllText(GetStoragePath(name));
+#endif
+        TModel model = new TModel();
         JsonUtility.FromJsonOverwrite(modelText, model);
         Model.OnChange.RemoveAllListeners();
         Model = model;
@@ -31,10 +36,15 @@ public class ScriptableModel<TModel> : ScriptableObject, IStorable where TModel:
 
     public bool Save()
     {
-        try 
+        try
         {
             string modelText = JsonUtility.ToJson(Model);
+#if UNITY_WEBGL && !UNITY_EDITOR                                    
+            PlayerPrefs.SetString(name + "data123", modelText);        
+            PlayerPrefs.Save();                                        
+#else                                                             
             File.WriteAllText(GetStoragePath(name), modelText);
+#endif
         }
         catch (Exception e)
         {

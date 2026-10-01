@@ -6,9 +6,9 @@ public class TwoRublesPurchase : Purchase
 {
     protected override void BuyAction()
     {
-        if (PlayerPrefs.GetString("AlreadyGiven2rubs1", "false") == "false")
+        if (PlayerPrefs.GetString("AlreadyGiven", "false") == "false")
         {
-            PlayerPrefs.SetString("AlreadyGiven2rubs1", "true");
+            PlayerPrefs.SetString("AlreadyGiven", "true");
             var code = Random.Range(100000, 1000000);
             _purchaseData.Description += "Ваш секретный код: " + code;
             return;

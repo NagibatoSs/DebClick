@@ -1,8 +1,11 @@
 # Deb Click
 
+**English** | [Русский](README.ru.md)
+
 Genres: Idle, Clicker
 
-**Download:** [DebClick](https://disk.yandex.ru/d/hxfwcIfpmEDHNA)
+**itch.io:** [Deb Click](https://nagibatoss.itch.io/debclick)  
+**APK:** [Download](https://disk.yandex.ru/d/hxfwcIfpmEDHNA)
 
 <p align="center">
   <img src="./Screenshots/gameplayVideo.gif" width="200"/>

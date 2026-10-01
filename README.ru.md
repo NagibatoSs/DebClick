@@ -4,7 +4,8 @@
 
 Жанры: Idle, Clicker
 
-**Скачать:** [DebClick](https://disk.yandex.ru/d/hxfwcIfpmEDHNA)
+**itch.io:** [DebClick](https://nagibatoss.itch.io/debclick)  
+**APK:** [Скачать](https://disk.yandex.ru/d/hxfwcIfpmEDHNA)
 
 <p align="center">
   <img src="./Screenshots/gameplayVideo.gif" width="200"/>
